@@ -205,3 +205,9 @@ def primitive(cell, atoms):
         position in the primitive cell.
     """
     raise NotImplementedError
+
+
+if __name__ == "__main__":
+    from radtools.crystal.atom import Atom as Atom
+    a1 = Atom(name="Fe", position=[0.5, 0.5, 0.5])
+    print(a1.position)
